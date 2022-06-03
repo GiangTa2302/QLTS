@@ -1,1 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<thisinh>
+    <thiSinh>
+        <diaChi>Thái Bình</diaChi>
+        <diem>
+            <diem1>8.0</diem1>
+            <diem2>8.0</diem2>
+            <diem3>8.5</diem3>
+        </diem>
+        <hoTen>Giang</hoTen>
+        <id>5</id>
+        <sbd>TS05</sbd>
+        <uuTien>0.25</uuTien>
+    </thiSinh>
+    <thiSinh>
+        <diaChi>Thái Bình</diaChi>
+        <diem>
+            <diem1>7.0</diem1>
+            <diem2>8.0</diem2>
+            <diem3>8.0</diem3>
+        </diem>
+        <hoTen>Tạ Thị Giang</hoTen>
+        <id>7</id>
+        <sbd>TS07</sbd>
+        <uuTien>0.0</uuTien>
+    </thiSinh>
+    <thiSinh>
+        <diaChi>adf</diaChi>
+        <diem>
+            <diem1>5.0</diem1>
+            <diem2>10.0</diem2>
+            <diem3>4.0</diem3>
+        </diem>
+        <hoTen>afd</hoTen>
+        <id>10</id>
+        <sbd>sdf</sbd>
+        <uuTien>0.0</uuTien>
+    </thiSinh>
+    <thiSinh>
+        <diaChi>Lạng Sơn</diaChi>
+        <diem>
+            <diem1>6.0</diem1>
+            <diem2>7.0</diem2>
+            <diem3>6.0</diem3>
+        </diem>
+        <hoTen>Thảo</hoTen>
+        <id>3</id>
+        <sbd>TS03</sbd>
+        <uuTien>0.5</uuTien>
+    </thiSinh>
+    <thiSinh>
+        <diaChi>Nam Định</diaChi>
+        <diem>
+            <diem1>8.0</diem1>
+            <diem2>7.0</diem2>
+            <diem3>7.0</diem3>
+        </diem>
+        <hoTen>Hòa</hoTen>
+        <id>2</id>
+        <sbd>TS02</sbd>
+        <uuTien>0.0</uuTien>
+    </thiSinh>
+    <thiSinh>
+        <diaChi>Hòa Bình</diaChi>
+        <diem>
+            <diem1>5.0</diem1>
+            <diem2>4.0</diem2>
+            <diem3>5.5</diem3>
+        </diem>
+        <hoTen>Nguyễn Ngọc Lan</hoTen>
+        <id>8</id>
+        <sbd>TS04</sbd>
+        <uuTien>0.75</uuTien>
+    </thiSinh>
+</thisinh>

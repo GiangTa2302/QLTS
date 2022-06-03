@@ -4,9 +4,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import org.kordamp.ikonli.Ikon;
-import org.kordamp.ikonli.swing.FontIcon;
-
 import controller.AdminController;
 import controller.LoginController;
 import controller.RegisterController;

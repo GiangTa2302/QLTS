@@ -7,7 +7,6 @@ import javax.swing.JTabbedPane;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,8 +33,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
 
 public class AdminView extends JFrame {
 
@@ -61,7 +58,7 @@ public class AdminView extends JFrame {
 //					AdminView adminView = new AdminView();
 //					adminView.setVisible(true);
 //				} catch (Exception e) {
-//					e.printStackTrace();s
+//					e.printStackTrace();
 //				}
 //			}
 //		});
@@ -147,19 +144,19 @@ public class AdminView extends JFrame {
 		QLTS.add(diaChi);
 
 		uuTien = new JTextField();
-		uuTien.addFocusListener(new FocusAdapter() {
-			@Override
-			public void focusLost(FocusEvent e) {
-				try {
-					float ut = Float.parseFloat(uuTien.getText());
-					if (ut < 0 || ut > 3)
-						throw new NumberFormatException();
-				} catch (NumberFormatException e2) {
-					JOptionPane.showMessageDialog(null, "Ưu tiên không hợp lệ!");
-					uuTien.requestFocusInWindow();
-				}
-			}
-		});
+//		uuTien.addFocusListener(new FocusAdapter() {
+//			@Override
+//			public void focusLost(FocusEvent e) {
+//				try {
+//					float ut = Float.parseFloat(uuTien.getText());
+//					if (ut < 0 || ut > 3)
+//						throw new NumberFormatException();
+//				} catch (NumberFormatException e2) {
+//					JOptionPane.showMessageDialog(null, "Ưu tiên không hợp lệ!");
+//					uuTien.requestFocusInWindow();
+//				}
+//			}
+//		});
 		uuTien.setColumns(10);
 		uuTien.setBounds(79, 242, 110, 30);
 		QLTS.add(uuTien);
@@ -188,55 +185,55 @@ public class AdminView extends JFrame {
 		QLTS.add(cbKhoi);
 
 		diemMon1 = new JTextField();
-		diemMon1.addFocusListener(new FocusAdapter() {
-			@Override
-			public void focusLost(FocusEvent e) {
-				try {
-					float diem = Float.parseFloat(diemMon1.getText());
-					if (diem < 0 || diem > 10)
-						throw new NumberFormatException();
-				} catch (NumberFormatException e2) {
-					JOptionPane.showMessageDialog(null, "Nhập điểm môn " + lblMon1.getText() + " không hợp lệ");
-					diemMon1.requestFocusInWindow();
-				}
-			}
-		});
+//		diemMon1.addFocusListener(new FocusAdapter() {
+//			@Override
+//			public void focusLost(FocusEvent e) {
+//				try {
+//					float diem = Float.parseFloat(diemMon1.getText());
+//					if (diem < 0 || diem > 10)
+//						throw new NumberFormatException();
+//				} catch (NumberFormatException e2) {
+//					JOptionPane.showMessageDialog(null, "Nhập điểm môn " + lblMon1.getText() + " không hợp lệ");
+//					diemMon1.requestFocusInWindow();
+//				}
+//			}
+//		});
 		diemMon1.setColumns(10);
 		diemMon1.setBounds(79, 372, 110, 23);
 		QLTS.add(diemMon1);
 
 		diemMon2 = new JTextField();
-		diemMon2.addFocusListener(new FocusAdapter() {
-			@Override
-			public void focusLost(FocusEvent e) {
-				try {
-					float diem = Float.parseFloat(diemMon2.getText());
-					if (diem < 0 || diem > 10)
-						throw new NumberFormatException();
-				} catch (NumberFormatException e2) {
-					JOptionPane.showMessageDialog(null, "Nhập điểm môn " + lblMon2.getText() + " không hợp lệ");
-					diemMon2.requestFocusInWindow();
-				}
-			}
-		});
+//		diemMon2.addFocusListener(new FocusAdapter() {
+//			@Override
+//			public void focusLost(FocusEvent e) {
+//				try {
+//					float diem = Float.parseFloat(diemMon2.getText());
+//					if (diem < 0 || diem > 10)
+//						throw new NumberFormatException();
+//				} catch (NumberFormatException e2) {
+//					JOptionPane.showMessageDialog(null, "Nhập điểm môn " + lblMon2.getText() + " không hợp lệ");
+//					diemMon2.requestFocusInWindow();
+//				}
+//			}
+//		});
 		diemMon2.setColumns(10);
 		diemMon2.setBounds(79, 436, 110, 23);
 		QLTS.add(diemMon2);
 
 		diemMon3 = new JTextField();
-		diemMon3.addFocusListener(new FocusAdapter() {
-			@Override
-			public void focusLost(FocusEvent e) {
-				try {
-					float diem = Float.parseFloat(diemMon3.getText());
-					if (diem < 0 || diem > 10)
-						throw new NumberFormatException();
-				} catch (NumberFormatException e2) {
-					JOptionPane.showMessageDialog(null, "Nhập điểm môn " + lblMon3.getText() + " không hợp lệ");
-					diemMon3.requestFocusInWindow();
-				}
-			}
-		});
+//		diemMon3.addFocusListener(new FocusAdapter() {
+//			@Override
+//			public void focusLost(FocusEvent e) {
+//				try {
+//					float diem = Float.parseFloat(diemMon3.getText());
+//					if (diem < 0 || diem > 10)
+//						throw new NumberFormatException();
+//				} catch (NumberFormatException e2) {
+//					JOptionPane.showMessageDialog(null, "Nhập điểm môn " + lblMon3.getText() + " không hợp lệ");
+//					diemMon3.requestFocusInWindow();
+//				}
+//			}
+//		});
 		diemMon3.setColumns(10);
 		diemMon3.setBounds(79, 493, 110, 23);
 		QLTS.add(diemMon3);
@@ -329,7 +326,16 @@ public class AdminView extends JFrame {
 					} else if (uuTien.getText().equals("")) {
 						JOptionPane.showMessageDialog(null, "Ưu tiên không được để trống!");
 						check = false;
-					} else if (!uuTien.getText().equals("")) {
+					} else if (diemMon1.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Môn " + lblMon1.getText() + " không được để trống!");
+						check = false;
+					} else if (diemMon2.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Môn " + lblMon2.getText() + " không được để trống!");
+						check = false;
+					} else if (diemMon3.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Môn " + lblMon3.getText() + " không được để trống!");
+						check = false;
+					} else if(!uuTien.getText().equals("")) {
 						try {
 							float ut = Float.parseFloat(uuTien.getText());
 							if (ut < 0 || ut > 3)
@@ -338,45 +344,35 @@ public class AdminView extends JFrame {
 							JOptionPane.showMessageDialog(null, "Ưu tiên không hợp lệ");
 							check = false;
 						}
-					} else if (diemMon1.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, "Môn " + lblMon1.getText() + " không được để trống!");
-						check = false;
-					} else if (!diemMon1.getText().equals("")) {
-						try {
-							float d1 = Float.parseFloat(diemMon1.getText());
-							if (d1 < 0 || d1 > 10)
-								throw new NumberFormatException();
-						} catch (NumberFormatException e2) {
-							JOptionPane.showMessageDialog(null, "Điểm môn " + lblMon1.getText() + " không hợp lệ!");
-							check = false;
-						}
-					} else if (diemMon2.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, "Môn " + lblMon2.getText() + " không được để trống!");
-						check = false;
-					} else if (diemMon2.getText().equals("")) {
-						try {
-							float d2 = Float.parseFloat(diemMon2.getText());
-							if (d2 < 0 || d2 > 10)
-								throw new NumberFormatException();
-						} catch (NumberFormatException e2) {
-							JOptionPane.showMessageDialog(null, "Điểm môn " + lblMon2.getText() + " không hợp lệ!");
-							check = false;
-						}
-					} else if (diemMon3.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, "Môn " + lblMon3.getText() + " không được để trống!");
-						check = false;
-					} else if (diemMon3.getText().equals("")) {
-
-						try {
-							float d3 = Float.parseFloat(diemMon3.getText());
-							if (d3 < 0 || d3 > 10)
-								throw new NumberFormatException();
-						} catch (NumberFormatException e2) {
-							JOptionPane.showMessageDialog(null, "Điểm môn " + lblMon3.getText() + " không hợp lệ!");
-							check = false;
-						}
 					}
-
+					
+					try {
+						float d1 = Float.parseFloat(diemMon1.getText());
+						if (d1 < 0 || d1 > 10)
+							throw new NumberFormatException();
+					} catch (NumberFormatException e2) {
+						JOptionPane.showMessageDialog(null, "Điểm môn " + lblMon1.getText() + " không hợp lệ!");
+						check = false;
+					}
+					
+					try {
+						float d2 = Float.parseFloat(diemMon2.getText());
+						if (d2 < 0 || d2 > 10)
+							throw new NumberFormatException();
+					} catch (NumberFormatException e2) {
+						JOptionPane.showMessageDialog(null, "Điểm môn " + lblMon2.getText() + " không hợp lệ!");
+						check = false;
+					}
+					
+					try {
+						float d3 = Float.parseFloat(diemMon3.getText());
+						if (d3 < 0 || d3 > 10)
+							throw new NumberFormatException();
+					} catch (NumberFormatException e2) {
+						JOptionPane.showMessageDialog(null, "Điểm môn " + lblMon3.getText() + " không hợp lệ!");
+						check = false;
+					}
+					
 					if (check) {
 						ts.setSbd(SBD.getText());
 						ts.setHoTen(hoTen.getText());
@@ -390,6 +386,15 @@ public class AdminView extends JFrame {
 
 						ThiSinhDao.insertTS(ts);
 						JOptionPane.showMessageDialog(null, "Thêm thí sinh mới thành công!");
+						
+						SBD.setText("");
+						hoTen.setText("");
+						diaChi.setText("");
+						uuTien.setText("");
+						cbKhoi.setSelectedIndex(0);
+						diemMon1.setText("");
+						diemMon2.setText("");
+						diemMon3.setText("");
 					}
 
 					showData(ThiSinhDao.findAll(), table);
@@ -419,7 +424,7 @@ public class AdminView extends JFrame {
 				ts.setDiem(diem);
 				ThiSinhDao.update(ts);
 
-				JOptionPane.showMessageDialog(null, "Update Successful");
+				JOptionPane.showMessageDialog(null, "Cập nhật thành công!");
 
 				showData(ThiSinhDao.findAll(), table);
 			}
@@ -564,33 +569,38 @@ public class AdminView extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String sbd = txtSBD3.getText();
 				ThiSinh ts = ThiSinhDao.getBySBD(sbd);
-				txtHoTen.setText(ts.getHoTen());
-				txtDiaChi.setText(ts.getDiaChi());
-				txtUuTien.setText(String.valueOf(ts.getUuTien()));
-				if (ts.getKhoi().getMaKhoi() == 1) {
-					txtKhoi.setText("Khối A");
-					mon1.setText("Toán");
-					mon2.setText("Lý");
-					mon3.setText("Hóa");
-					txtMon1.setText(String.valueOf(ts.getDiem().getDiem1()));
-					txtMon2.setText(String.valueOf(ts.getDiem().getDiem2()));
-					txtMon3.setText(String.valueOf(ts.getDiem().getDiem3()));
-				} else if (ts.getKhoi().getMaKhoi() == 2) {
-					txtKhoi.setText("Khối B");
-					mon1.setText("Toán");
-					mon2.setText("Hóa");
-					mon3.setText("Sinh");
-					txtMon1.setText(String.valueOf(ts.getDiem().getDiem1()));
-					txtMon2.setText(String.valueOf(ts.getDiem().getDiem2()));
-					txtMon3.setText(String.valueOf(ts.getDiem().getDiem3()));
-				} else {
-					txtKhoi.setText("Khối C");
-					mon1.setText("Văn");
-					mon2.setText("Sử");
-					mon3.setText("Địa");
-					txtMon1.setText(String.valueOf(ts.getDiem().getDiem1()));
-					txtMon2.setText(String.valueOf(ts.getDiem().getDiem2()));
-					txtMon3.setText(String.valueOf(ts.getDiem().getDiem3()));
+				if(ts == null) {
+					JOptionPane.showMessageDialog(null, "Không tồn tại thí sinh này!");
+				}
+				else {
+					txtHoTen.setText(ts.getHoTen());
+					txtDiaChi.setText(ts.getDiaChi());
+					txtUuTien.setText(String.valueOf(ts.getUuTien()));
+					if (ts.getKhoi().getMaKhoi() == 1) {
+						txtKhoi.setText("Khối A");
+						mon1.setText("Toán");
+						mon2.setText("Lý");
+						mon3.setText("Hóa");
+						txtMon1.setText(String.valueOf(ts.getDiem().getDiem1()));
+						txtMon2.setText(String.valueOf(ts.getDiem().getDiem2()));
+						txtMon3.setText(String.valueOf(ts.getDiem().getDiem3()));
+					} else if (ts.getKhoi().getMaKhoi() == 2) {
+						txtKhoi.setText("Khối B");
+						mon1.setText("Toán");
+						mon2.setText("Hóa");
+						mon3.setText("Sinh");
+						txtMon1.setText(String.valueOf(ts.getDiem().getDiem1()));
+						txtMon2.setText(String.valueOf(ts.getDiem().getDiem2()));
+						txtMon3.setText(String.valueOf(ts.getDiem().getDiem3()));
+					} else {
+						txtKhoi.setText("Khối C");
+						mon1.setText("Văn");
+						mon2.setText("Sử");
+						mon3.setText("Địa");
+						txtMon1.setText(String.valueOf(ts.getDiem().getDiem1()));
+						txtMon2.setText(String.valueOf(ts.getDiem().getDiem2()));
+						txtMon3.setText(String.valueOf(ts.getDiem().getDiem3()));
+					}
 				}
 			}
 		});
